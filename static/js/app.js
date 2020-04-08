@@ -1,7 +1,5 @@
-const url = "http://127.0.0.1:5500/Plotly-Challenge/Plot.ly-Challenge/data/samples.json";
-
 // get the JSON data and console log it
-d3.json(url).then(data => {
+d3.json("samples.json").then(data => {
   // console.log(data);
 
   // create arrays for names; arrays of objects for metadata and samples
@@ -160,9 +158,8 @@ function bubbleChart(samples, id) {
 
 // refresh the page with new info tied to dropdown selection
 function optionChanged(id) {
-
   // console.log(id),
-  d3.json(url).then(data => {
+  d3.json("samples.json").then(data => {
     // console.log(data);
 
     // create arrays for names; arrays of objects for metadata and samples
